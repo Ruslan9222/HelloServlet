@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form example</title>
+    <link rel="stylesheet" href="my_style.css">
+</head>
+<body>
+<form action="/login" method="post">
+
+    <input type="text" name="username"/>
+    <input type="password" name="password"/>
+    <input type="date">
+    <input type="email">
+    <input type="number">
+    <input type="file"><br/>
+    <input type="checkbox" id = name1 name="name"/>
+    <input type="checkbox" id = name2 name="name"/>
+    <input type="radio" id = "second_radio" name="radio" checked>
+
+    <input type="color">
+    <input type="range" value="24" min="1" max="100" oninput="this.nextElementSibling">
+    <input type="search">
+    <input type="button" name="MyButton"/>
+    <input type="submit" name="Send">
+    <input type="reset" value="Reset all">
+
+</form>
+<p style="color: red"> this is my text"</p>
+<p> another text </p><br/>
+<p>last one</p>
+<div><span id first_span>first span</span><span>second span</span></div>
+<table >
+    <thead><p>this is example of my table</p></thead>
+    <tbody>
+    <tr>
+        <th>first column</th>
+        <th>second column</th>
+    </tr>
+    <tr>
+        <td>first column</td>
+        <td>second column</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

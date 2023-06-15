@@ -1,0 +1,41 @@
+p{
+    color: blue;
+    background: fuchsia;
+    font-family: "Adobe Arabic";
+    font-size: 20px;
+    border-style: dashed;
+    text-align: center;
+
+}
+
+body{
+    background-color: black;
+    background-image: url("111.jpeg");
+}
+table{
+    margin: 100px 200px 100px 200px;
+}
+th{
+    border-style: solid;
+    margin: 20px;
+    padding: 50px;
+}
+td{
+    border-style: solid;
+    margin: 20px;
+    padding: 50px;
+}
+#first_span{
+    color: coral;
+}
+input[type=submit]:hover{
+    background-color: blue;
+    width: 80%;
+    visibility: hidden;
+}
+input[type = checkbox]:checked{
+    border: red;
+}
+p:hover{
+    width: 100%;
+}
