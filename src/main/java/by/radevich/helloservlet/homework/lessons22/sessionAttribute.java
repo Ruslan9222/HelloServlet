@@ -1,9 +1,9 @@
 package by.radevich.helloservlet.homework.lessons22;
 
-import jakarta.servlet.annotation.WebListener;
+import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpSessionAttributeListener;
 import jakarta.servlet.http.HttpSessionBindingEvent;
-
+@WebServlet()
 public class sessionAttribute implements HttpSessionAttributeListener {
     @Override
     public void attributeAdded(HttpSessionBindingEvent event) {
