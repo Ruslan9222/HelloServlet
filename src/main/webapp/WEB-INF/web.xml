@@ -1,6 +1,33 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
          version="5.0">
+    <servlet>
+        <servlet-name>First</servlet-name>
+        <servlet-class>by.radevich.helloservlet.MyFirstServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>First</servlet-name>
+        <url-pattern>/here</url-pattern>
+    </servlet-mapping>
+    <filter>
+        <filter-name>MyFilter</filter-name>
+        <filter-class>by.radevich.helloservlet.HelloFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>MyFilter</filter-name>
+        <url-pattern>/here</url-pattern>
+    </filter-mapping>
+    <context-param>
+        <param-name>first</param-name>
+        <param-value>Pavel</param-value>
+    </context-param>
+    <context-param>
+        <param-name>second</param-name>
+        <param-value>super</param-value>
+    </context-param>
+    <listener>
+        <listener-class>by.radevich.helloservlet.MyFirstListener</listener-class>
+    </listener>
 </web-app>
